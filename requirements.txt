@@ -1,0 +1,6 @@
+flask
+Werkzeug==2.0.3
+asyncio
+youtube-dl==2021.4.26
+BeautifulSoup
+
