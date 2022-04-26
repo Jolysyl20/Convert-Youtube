@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Convert Youtube</title>
+</head>
+<body>
+        <h1 class="title">Convert You<span class="tube">Youte</span></h1>
+        <div class="urlAndVersion box">
+        <form method="post" name="urlVersion"  action='/download_video'>
+            <h2 class="explication"> Entrez l'url YouTube</h2>
+            <div>
+            <input type="text" name='URL' class="inputUrl" value="{{div}}" required/><br>
+            </div>
+            <label for="choix">téléchargement au format</label>
+              <select id="choix" name="choix">
+                <option value="mp3">mp3</option>
+                <option value="mp4">mp4</option>
+              </select>
+
+            <div>
+            <input type="submit" onclick="change()" id="my_field" name="envoyer" class="button" value="Telecharger">
+            </div>
+            <div>
+
+            </div>
+        </form>
+
+        </div>
+<script>
+function change(){
+	var txt = "Recherche";
+	document.getElementById("my_field").value = txt;
+}
+</script>
+</body>
+</html>

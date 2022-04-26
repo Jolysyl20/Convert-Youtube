@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Convert Youtube</title>
+</head>
+<body>
+      <h1 class="title">Convert You<span class="tube">Youte</span></h1>
+        <div style="text-align:center">
+          <form method="post" name="toto"  action='/uploads'>
+            <input type="hidden" value="{{download}}" name='path'>
+           <button type="submit">{{name}}</button>
+          </form>
+
+          <p>{{progress}}</p>
+
+          <a href="/" type="button">retour</a>
+        </div>
+</body>
+</html>
